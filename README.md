@@ -44,3 +44,20 @@ If completing the user's task requires writing or modifying files:
 - Prefer file citations over terminal citations unless the terminal output is directly relevant to the clauses before the citation, i.e. clauses on test results.
   - For PR creation tasks, use file citations when referring to code changes in the summary section of your final response, and terminal citations in the testing section.
   - For question-answering tasks, you should only use terminal citations if you need to programmatically verify an answer (i.e. counting lines of code). Otherwise, use file citations.
+
+## Online Order Platform
+
+This repository contains a minimal Angular project structure for a simple online order platform. The project was created manually without Angular CLI due to environment restrictions.
+
+### Features
+- Product listing with category filtering
+- Product detail view
+- Shopping cart with quantity adjustments
+- Checkout form with Cash on Delivery option
+
+### Setup
+1. Install Node.js and Angular CLI (requires internet access).
+2. Run `npm install` to install dependencies.
+3. Use `ng serve` to start the development server.
+
+Note: Dependency installation requires internet access.

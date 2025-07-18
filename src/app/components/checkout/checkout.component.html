@@ -1,0 +1,11 @@
+<h2>Checkout</h2>
+<form [formGroup]="form" (ngSubmit)="placeOrder()">
+  <label>Name</label>
+  <input formControlName="name" />
+  <label>Address</label>
+  <input formControlName="address" />
+  <label>Contact Number</label>
+  <input formControlName="contact" />
+  <p>Payment Method: Cash on Delivery</p>
+  <button type="submit" [disabled]="form.invalid">Place Order</button>
+</form>
