@@ -3,6 +3,13 @@ header {
   color: #fff;
   padding: 1rem;
 }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 nav a {
   color: #fff;
   margin-right: 1rem;
