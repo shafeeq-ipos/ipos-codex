@@ -14,7 +14,9 @@
             "outputPath": "dist/online-order-platform",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.json",
             "assets": [
               "src/favicon.ico",
