@@ -1,0 +1,11 @@
+<app-category-filter (categorySelected)="selectedCategory = $event"></app-category-filter>
+<div class="products">
+  <div class="product" *ngFor="let product of products | category:selectedCategory">
+    <img [src]="product.image" alt="{{product.name}}" />
+    <h3>{{product.name}}</h3>
+    <p>{{product.description}}</p>
+    <span>${{product.price}}</span>
+    <button (click)="addToCart(product)">Add to Cart</button>
+    <a [routerLink]="['/product', product.id]">View Details</a>
+  </div>
+</div>

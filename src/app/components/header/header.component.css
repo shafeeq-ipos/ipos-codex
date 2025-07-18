@@ -1,0 +1,10 @@
+header {
+  background: #1976d2;
+  color: #fff;
+  padding: 1rem;
+}
+nav a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+}

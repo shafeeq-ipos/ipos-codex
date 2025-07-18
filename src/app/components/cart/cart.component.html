@@ -1,0 +1,17 @@
+<h2>Your Cart</h2>
+<div *ngIf="cartService.items.length; else empty">
+  <div class="item" *ngFor="let item of cartService.items">
+    <span>{{item.product.name}}</span>
+    <span>${{item.product.price}}</span>
+    <button (click)="decrease(item)">-</button>
+    <span>{{item.quantity}}</span>
+    <button (click)="increase(item)">+</button>
+    <span>Subtotal: ${{item.product.price * item.quantity}}</span>
+    <button (click)="remove(item)">Remove</button>
+  </div>
+  <div class="total">Total: ${{cartService.getTotal()}}</div>
+  <a routerLink="/checkout">Proceed to Checkout</a>
+</div>
+<ng-template #empty>
+  <p>Your cart is empty.</p>
+</ng-template>
