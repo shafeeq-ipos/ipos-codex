@@ -1,6 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/angular.json",
   "version": 1,
+  "defaultProject": "online-order-platform",
   "projects": {
     "online-order-platform": {
       "projectType": "application",
@@ -8,6 +9,7 @@
       "sourceRoot": "src",
       "architect": {
         "build": {
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/online-order-platform",
             "index": "src/index.html",
@@ -25,6 +27,7 @@
           }
         },
         "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "online-order-platform:build"
           }
@@ -32,5 +35,7 @@
       }
     }
   },
-  "defaultProject": "online-order-platform"
+  "cli": {
+    "analytics": false
+  }
 }
