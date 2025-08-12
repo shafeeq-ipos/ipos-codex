@@ -15,3 +15,7 @@ nav a {
   margin-right: 1rem;
   text-decoration: none;
 }
+
+nav button {
+  margin-right: 1rem;
+}

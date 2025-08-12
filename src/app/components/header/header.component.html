@@ -1,6 +1,9 @@
-<header>
+<header *ngIf="sessionService.isSessionOpen()">
   <nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/cart">Cart ({{ cartService.items.length }})</a>
+    <a routerLink="/rooms">Rooms</a>
+    <a routerLink="/order">Order</a>
+    <span>Cart ({{ cartService.items.length }})</span>
+    <button (click)="lock()">Lock</button>
+    <button (click)="closeSession()" routerLink="/login">Close</button>
   </nav>
 </header>

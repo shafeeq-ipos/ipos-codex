@@ -1,0 +1,12 @@
+.order-page {
+  display: flex;
+}
+.catalog {
+  flex: 2;
+  padding: 1rem;
+}
+.cart-panel {
+  flex: 1;
+  padding: 1rem;
+  background: #f9f9f9;
+}

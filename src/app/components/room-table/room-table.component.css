@@ -1,0 +1,10 @@
+.rooms {
+  padding: 1rem;
+}
+.room {
+  margin-bottom: 1rem;
+}
+.tables button {
+  margin: 0.25rem;
+  padding: 1rem;
+}
