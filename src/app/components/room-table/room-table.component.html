@@ -1,0 +1,8 @@
+<div class="rooms">
+  <div *ngFor="let room of rooms" class="room">
+    <h3>{{ room.name }}</h3>
+    <div class="tables">
+      <button *ngFor="let table of room.tables" (click)="selectTable(table.id)">{{ table.name }}</button>
+    </div>
+  </div>
+</div>
