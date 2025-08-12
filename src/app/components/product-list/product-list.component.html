@@ -1,4 +1,3 @@
-<app-category-filter (categorySelected)="selectedCategory = $event"></app-category-filter>
 <div class="products">
   <div class="product" *ngFor="let product of products | category:selectedCategory">
     <img [src]="product.image" alt="{{product.name}}" />
