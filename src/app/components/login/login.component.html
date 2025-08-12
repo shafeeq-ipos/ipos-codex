@@ -1,0 +1,24 @@
+<div class="login-container">
+  <div class="login-box">
+    <h2>Cashier Login</h2>
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <input
+        type="text"
+        placeholder="ID"
+        [(ngModel)]="cashierId"
+        name="id"
+        required
+      />
+      <input
+        type="password"
+        placeholder="PIN"
+        [(ngModel)]="pin"
+        name="pin"
+        required
+      />
+      <button type="submit" [disabled]="!loginForm.form.valid">
+        Open Session
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { CartService } from '../../services/cart.service';
 import { Product } from '../../models/product';
@@ -10,7 +10,7 @@ import { Product } from '../../models/product';
 })
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
-  selectedCategory: string | null = null;
+  @Input() selectedCategory: string | null = null;
 
   constructor(
     private productService: ProductService,

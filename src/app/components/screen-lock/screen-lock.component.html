@@ -1,0 +1,7 @@
+<div class="lock-overlay" *ngIf="sessionService.isLocked()">
+  <div class="lock-dialog">
+    <h3>Screen Locked</h3>
+    <input type="password" [(ngModel)]="pin" placeholder="Enter PIN">
+    <button (click)="unlock()">Unlock</button>
+  </div>
+</div>

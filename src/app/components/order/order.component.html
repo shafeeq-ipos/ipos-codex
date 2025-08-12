@@ -1,0 +1,9 @@
+<div class="order-page">
+  <div class="catalog">
+    <app-category-filter (categorySelected)="onCategorySelected($event)"></app-category-filter>
+    <app-product-list [selectedCategory]="selectedCategory"></app-product-list>
+  </div>
+  <div class="cart-panel">
+    <app-cart></app-cart>
+  </div>
+</div>
